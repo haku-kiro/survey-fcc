@@ -2,13 +2,68 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Fork Me! FCC: Test Suite Template</title>
+  <title>FCC - Survey form</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
+<main>
+  <h1 id="title">FCC: Survey</h1>
+  <p id="description">This is a survey form. Please fill out the form as best as you can!</p>
+
+  <form action="#" id="survey-form">
+    <label for="name" id="name-label">Name<input type="text" id="name" placeholder="Enter your name" required></label>
+    <label for="email" id="email-label">Email<input type="email" id="email" placeholder="Enter your email" required></label>
+    <label for="number" id="number-label">Age (optional)<input type="number" id="number" min="10" max="150" placeholder="Enter your age"></label>
+
+    <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+    <select name="role" id="dropdown">
+      <option value="student">Student</option>
+      <option value="full-time-job">Full Time Job</option>
+      <option value="full-time-learner">Full Time Learner</option>
+      <option value="prefer-not-say">Prefer to not say</option>
+      <option value="other">Other</option>
+    </select>
+
+    <h5>Would you recommend FreeCodeCamp to a friend?</h5>
+    <input type="radio" id="Defintely-option" name="recommend" value="defintely">
+    <label for="Defintely-option">Defintely</label><br>
+    <input type="radio" id="Maybe-option" name="recommend" value="maybe">
+    <label for="Maybe-option">Maybe</label><br>
+    <input type="radio" id="notsure-option" name="recommend" value="not-sure">
+    <label for="notsure-option">Not sure</label>
+
+    <h5>Which are your favourite certifications on offer?</h5>
+    <input type="checkbox" id="responsive-design" name="certifications" value="responsive-design">
+    <label for="responsive-design">Responsive Web Design</label><br>
+    <input type="checkbox" id="Javascript-Algorithms" name="certifications" value="javascript-algorithms">
+    <label for="Javascript-Algorithms">Javascript Algorithms and Data Structures</label><br>
+    <input type="checkbox" id="front-end" name="certifications" value="front-end">
+    <label for="front-end">Front end Libraries</label><br>
+    <input type="checkbox" id="data-viz" name="certifications" value="data-viz">
+    <label for="data-viz">Data Visualization</label><br>
+    <input type="checkbox" id="apis" name="certifications" value="apis">
+    <label for="apis">APIs and Microservices</label><br>
+    <input type="checkbox" id="qa" name="certifications" value="qa">
+    <label for="qa">Quality Assurance</label><br>
+    <input type="checkbox" id="scientific-computing" name="certifications" value="scientific-computing">
+    <label for="scientific-computing">scientific computing with Python</label><br>
+    <input type="checkbox" id="data-analysis" name="certifications" value="data-analysis">
+    <label for="data-analysis">Data Analysis with Python</label><br>
+    <input type="checkbox" id="info-sec" name="certifications" value="info-sec">
+    <label for="info-sec">Information Security</label><br>
+    <input type="checkbox" id="ML" name="certifications" value="ML">
+    <label for="ML">Machine Learning</label><br>
+    <input type="checkbox" id="interview-prep" name="certifications" value="interview-prep">
+    <label for="interview-prep">Coding Interview Prep</label><br>
+
+    <textarea name="more-info" id="textarea" cols="30" rows="10" placeholder="Additiona Comments?"></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</main>
 
 
 <script  src="./script.js"></script>
